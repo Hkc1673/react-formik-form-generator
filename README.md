@@ -21,6 +21,9 @@ You can see example app with react-formik-form-generator.
 This repository helps you to easily review using of the package with example.
 [Click Here](https://github.com/Hkc1673/react-formik-form-generator-example#readme)
 
+![Login Form](login-form.png)
+![Survey Form](survey-form.png)
+
 ### Import ReactFormGenerator
 
 ```javascript
