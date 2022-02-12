@@ -1,0 +1,41 @@
+{
+  "name": "react-formik-form-generator",
+  "version": "1.0.3",
+  "main": "./lib/cjs/index.js",
+  "module": "./lib/esm/index.js",
+  "types": "./lib/esm/index.d.ts",
+  "license": "MIT",
+  "scripts": {
+    "build": "yarn build:esm && yarn build:cjs",
+    "build:esm": "tsc",
+    "build:cjs": "tsc --module commonjs --outDir lib/cjs"
+  },
+  "peerDependencies": {
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  },
+  "files": [
+    "/lib"
+ ],
+ "keywords": [
+  "formik",
+  "yup",
+  "styled-components",
+  "typescript",
+  "dynamic-form",
+  "react"
+],
+  "devDependencies": {
+    "@types/react": "^17.0.38",
+    "@types/react-dom": "^17.0.11",
+    "@types/styled-components": "^5.1.21",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "typescript": "^4.5.5"
+  },
+  "dependencies": {
+    "yup": "^0.32.11",
+    "styled-components": "^5.3.3",
+    "formik": "^2.2.9"
+  }
+}
