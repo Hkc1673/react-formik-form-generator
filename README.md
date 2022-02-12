@@ -15,6 +15,12 @@ yarn add react-formik-form-generator
 
 ### Example
 
+You can see example app with react-formik-form-generator.
+[Click Here](https://react-formik-form-generator.herokuapp.com/)
+
+This repository helps you to easily review using of the package with example.
+[Click Here](https://github.com/Hkc1673/react-formik-form-generator-example#readme)
+
 ### Import ReactFormGenerator
 
 ```javascript
