@@ -34,7 +34,7 @@ import ReactFormGenerator from "react-formik-form-generator";
 ```jsx
 <ReactFormGenerator
   formData={loginFormData}
-  buttonTitle={"Login"}
+  buttonTitle="Login"
   onSubmit={onSubmit}
 />
 ```

@@ -12,7 +12,7 @@ const SurveyForm = () => {
       <h1>Questionnaire</h1>
       <ReactFormGenerator
         formData={SurveyFormData}
-        buttonTitle={"Submit"}
+        buttonTitle="Submit"
         onSubmit={onSubmit}
       />
     </SurveyFormContainer>
