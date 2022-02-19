@@ -34,7 +34,7 @@ import ReactFormGenerator from "react-formik-form-generator";
 ```jsx
 <ReactFormGenerator
   formData={loginFormData}
-  buttonTitle="Login"
+  buttonProp={loginButtonStyle} //optional
   onSubmit={onSubmit}
 />
 ```
@@ -76,4 +76,29 @@ const loginFormData = [
     ],
   },
 ];
+```
+
+### Sample loginButtonStyle props
+
+This props is optional and you can use all style properties for customizing your button element.
+
+```javascript
+const loginButtonStyle = {
+  buttonTitle: "Login",
+  buttonStyle: {
+    color: "#fff",
+    backgroundColor: "#fff",
+    height: "40px",
+    width: "100%",
+    marginLeft: "20px",
+    fontSize: "20px",
+    fontWeight: "600",
+    borderRadius: "10px",
+    backgroundImage: `radial-gradient(
+        100% 100% at 100% 0,
+        #5adaff 0,
+        #5468ff 100%
+      )`,
+  },
+};
 ```

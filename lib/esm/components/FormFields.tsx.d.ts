@@ -1,8 +1,8 @@
-import { IButtonProps, IFormProps } from "../types/formData";
-export declare const Form: (props: any) => any;
-export declare const TextField: (props: IFormProps) => any;
-export declare const TextAreaField: (props: IFormProps) => any;
-export declare const SelectField: (props: IFormProps) => any;
-export declare const RadioField: (props: IFormProps) => any;
-export declare const CheckBoxField: (props: IFormProps) => any;
-export declare const SubmitButton: (props: IButtonProps) => any;
+/// <reference types="react" />
+import { IFormProps } from "../types/formData";
+export declare const Form: (props: any) => JSX.Element;
+export declare const TextField: (props: IFormProps) => JSX.Element;
+export declare const TextAreaField: (props: IFormProps) => JSX.Element;
+export declare const SelectField: (props: IFormProps) => JSX.Element;
+export declare const RadioField: (props: IFormProps) => JSX.Element;
+export declare const CheckBoxField: (props: IFormProps) => JSX.Element;

@@ -5,12 +5,12 @@ import {
   Form,
   TextField,
   SelectField,
-  SubmitButton,
   RadioField,
   TextAreaField,
   CheckBoxField,
 } from "./components/FormFields.tsx";
 import { IFormData, IFieldMap, IAppProps } from "./types/formData";
+import { SubmitButton, ButtonContainer } from "./style/formStyle";
 
 const fieldMap: IFieldMap = {
   text: TextField,
@@ -20,7 +20,7 @@ const fieldMap: IFieldMap = {
   checkbox: CheckBoxField,
 };
 
-const App: React.FC<IAppProps> = ({ formData, buttonTitle, onSubmit }) => {
+const App: React.FC<IAppProps> = ({ formData, buttonProp, onSubmit }) => {
   const initialValues: any = {};
 
   formData.forEach((item: IFormData) => {
@@ -109,7 +109,11 @@ const App: React.FC<IAppProps> = ({ formData, buttonTitle, onSubmit }) => {
         );
       })}
 
-      <SubmitButton title={buttonTitle ? buttonTitle : "Submit"} />
+      <ButtonContainer>
+        <SubmitButton type="submit" style={buttonProp?.buttonStyle}>
+          {buttonProp ? buttonProp?.buttonTitle : "Submit"}
+        </SubmitButton>
+      </ButtonContainer>
     </Form>
   );
 };

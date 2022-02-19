@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Formik, Form as FormikForm, Field, ErrorMessage } from "formik";
-import { FormElement, ButtonBox, FormWrapper } from "../style/formStyle";
-import { IButtonProps, IFormProps } from "../types/formData";
+import { FormElement, FormWrapper } from "../style/formStyle";
+import { IFormProps } from "../types/formData";
 import { Eye } from "../icons/eye-icon";
 import { EyeOff } from "../icons/eye-off-icon";
 
@@ -166,16 +166,5 @@ export const CheckBoxField = (props: IFormProps) => {
         render={(err) => <div className="form-error">{err}</div>}
       />
     </FormElement>
-  );
-};
-
-export const SubmitButton = (props: IButtonProps) => {
-  const { title, ...rest } = props;
-  return (
-    <ButtonBox>
-      <button type="submit" {...rest}>
-        {title}
-      </button>
-    </ButtonBox>
   );
 };

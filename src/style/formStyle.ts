@@ -74,28 +74,28 @@ export const FormElement = styled.div`
   }
 `;
 
-export const ButtonBox = styled.div`
- display: flex;
- align-items: center;
- justify-content: center;
- width: 100%;
- button {
-    width: 60%;
-    height: 35px;
-    border-radius: 5px;
-    background-image: linear-gradient(to right,#00e600, #009900);
-    font-weight: 600;
+export const ButtonContainer = styled.div`
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+`
+export const SubmitButton = styled.button`
+    width: ${props => props?.style?.width || '30%'} ;
+    height: ${props => props?.style?.height || '35px'} ;
+    background-color:${props => props?.style?.backgroundColor || '#60A728'} ;
+    font-weight: ${props => props?.style?.fontWeight || "600"};
+    font-size:${props => props?.style?.fontSize || '#16px'};
+    color:${props => props?.style?.color || '#fff'};
     letter-spacing: 2px;
-    color: #fff;
+    border-radius: 5px;
     border: none;
     &:hover{
         cursor:pointer;
-        background-image: linear-gradient(to right,#00b300, #008000);
         letter-spacing: 3px;
     }
     &:active {
         transform: scale(0.98);
         box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
     }
-}
 `

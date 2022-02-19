@@ -1,8 +1,12 @@
 import { ChangeEvent } from "react";
 export interface IAppProps {
     formData: IFormData;
-    buttonTitle: string;
+    buttonProp?: IButtonStyle;
     onSubmit: (values: {}) => void;
+}
+export interface IButtonStyle {
+    buttonTitle?: string;
+    buttonStyle?: {};
 }
 export interface IOption {
     value: string;
