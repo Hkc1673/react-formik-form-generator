@@ -78,7 +78,7 @@ const loginFormData = [
 ];
 ```
 
-### Sample loginButtonStyle props
+### Sample buttonProp props
 
 This props is optional and you can use all style properties for customizing your button element.
 
