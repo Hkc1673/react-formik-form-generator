@@ -84,7 +84,7 @@ This props is optional and you can use all style properties for customizing your
 
 ```javascript
 const loginButtonStyle = {
-  buttonTitle: "Login",
+  buttonTitle: "Login", // default buttonTitle: "Submit"
   buttonStyle: {
     color: "#fff",
     backgroundColor: "#fff",
